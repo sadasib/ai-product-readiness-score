@@ -1,0 +1,161 @@
+{
+  "product_name": "Launch Review",
+  "version": "1.0",
+  "gates": [
+    {
+      "id": "customer_value",
+      "title": "Customer Value",
+      "description": "Validate that the AI product solves a real customer problem.",
+      "questions": [
+        {
+          "id": "cv1",
+          "prompt": "Has the customer problem been clearly defined?",
+          "critical": false,
+          "help_text": "The team should be able to explain the user pain point in one sentence."
+        },
+        {
+          "id": "cv2",
+          "prompt": "Has the target persona been identified?",
+          "critical": false,
+          "help_text": "The product should be designed for a specific user segment."
+        },
+        {
+          "id": "cv3",
+          "prompt": "Have success metrics been defined?",
+          "critical": false,
+          "help_text": "Examples include adoption, completion rate, CSAT, or reduction in support contacts."
+        },
+        {
+          "id": "cv4",
+          "prompt": "Has the customer journey been documented?",
+          "critical": false,
+          "help_text": "The team should understand where the AI experience fits in the broader journey."
+        }
+      ]
+    },
+    {
+      "id": "ai_quality",
+      "title": "AI Quality",
+      "description": "Assess whether the AI experience is accurate, useful, and ready for launch.",
+      "questions": [
+        {
+          "id": "aq1",
+          "prompt": "Has a human evaluation been completed?",
+          "critical": true,
+          "help_text": "A human review should validate the AI experience on realistic scenarios."
+        },
+        {
+          "id": "aq2",
+          "prompt": "Is there a golden dataset or evaluation set?",
+          "critical": false,
+          "help_text": "The team should have representative examples to test quality consistently."
+        },
+        {
+          "id": "aq3",
+          "prompt": "Has the hallucination threshold been reviewed?",
+          "critical": false,
+          "help_text": "The team should define what level of incorrect output is acceptable."
+        },
+        {
+          "id": "aq4",
+          "prompt": "Has policy compliance been validated?",
+          "critical": true,
+          "help_text": "The AI should follow business rules and product policy correctly."
+        },
+        {
+          "id": "aq5",
+          "prompt": "Has escalation behavior been reviewed for high-risk cases?",
+          "critical": true,
+          "help_text": "The system should know when to hand off to a human."
+        }
+      ]
+    },
+    {
+      "id": "trust_safety",
+      "title": "Trust & Safety",
+      "description": "Review Responsible AI risks and customer trust considerations.",
+      "questions": [
+        {
+          "id": "ts1",
+          "prompt": "Has privacy review been completed?",
+          "critical": true,
+          "help_text": "The team should verify that data handling and usage are appropriate."
+        },
+        {
+          "id": "ts2",
+          "prompt": "Has a bias or fairness review been completed?",
+          "critical": false,
+          "help_text": "The team should check for uneven behavior across user groups or scenarios."
+        },
+        {
+          "id": "ts3",
+          "prompt": "Has prompt injection or adversarial testing been completed?",
+          "critical": true,
+          "help_text": "The system should be tested against attempts to manipulate behavior."
+        },
+        {
+          "id": "ts4",
+          "prompt": "Has a security review been completed?",
+          "critical": true,
+          "help_text": "The feature should be reviewed for leakage, misuse, or unsafe access patterns."
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "title": "Operational Readiness",
+      "description": "Ensure the organization can monitor, support, and recover from issues.",
+      "questions": [
+        {
+          "id": "op1",
+          "prompt": "Are monitoring dashboards configured?",
+          "critical": true,
+          "help_text": "The team should be able to observe system health and quality after launch."
+        },
+        {
+          "id": "op2",
+          "prompt": "Are alerting thresholds defined?",
+          "critical": false,
+          "help_text": "The team should know when to investigate or intervene."
+        },
+        {
+          "id": "op3",
+          "prompt": "Is the support team trained?",
+          "critical": false,
+          "help_text": "Support should understand what the feature does and how to respond to issues."
+        },
+        {
+          "id": "op4",
+          "prompt": "Is a rollback plan documented?",
+          "critical": true,
+          "help_text": "The team should be able to safely disable or revert the feature if needed."
+        }
+      ]
+    },
+    {
+      "id": "business",
+      "title": "Business Readiness",
+      "description": "Confirm the feature is aligned with business goals and rollout strategy.",
+      "questions": [
+        {
+          "id": "b1",
+          "prompt": "Has expected ROI been estimated?",
+          "critical": false,
+          "help_text": "The team should know the business value expected from the feature."
+        },
+        {
+          "id": "b2",
+          "prompt": "Has an executive sponsor been identified?",
+          "critical": false,
+          "help_text": "A sponsor helps align decisions and unblock cross-functional issues."
+        },
+        {
+          "id": "b3",
+          "prompt": "Has the rollout strategy been approved?",
+          "critical": false,
+          "help_text": "The team should know whether the launch is beta, phased, or full rollout."
+        }
+      ]
+    }
+  ]
+}
