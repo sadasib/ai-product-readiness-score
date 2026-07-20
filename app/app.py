@@ -27,7 +27,7 @@ SAMPLE_ASSESSMENT_PATH = DATA_DIR / "sample_assessment.json"
 
 
 st.set_page_config(
-    page_title="Launch Review",
+    page_title="AI Product Readiness Index",
     page_icon="🚀",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -128,7 +128,7 @@ def render_welcome(
     col1, col2 = st.columns(2)
 
     with col1:
-        if st.button("Start Launch Review", type="primary", use_container_width=True):
+        if st.button("Start Index Review", type="primary", use_container_width=True):
             clear_answer_state(questions_data)
             st.session_state["current_step"] = 1
             st.rerun()
@@ -235,7 +235,7 @@ def render_results(
 ) -> None:
     """Render the final scorecard."""
     st.title("Launch Review")
-    st.subheader("Launch Readiness Report")
+    st.subheader("Readiness Report")
 
     answers = st.session_state.get("answers", {})
     assessment = calculate_assessment(questions_data, scoring_rules, answers)
