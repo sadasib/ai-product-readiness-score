@@ -1,0 +1,33 @@
+{
+  "assessment_name": "Retail Returns Assistant - Sample Review",
+  "product_name": "Launch Review",
+  "version": "1.0",
+  "assessor": "Sample User",
+  "date": "2026-07-19",
+  "answers": {
+    "cv1": "yes",
+    "cv2": "yes",
+    "cv3": "yes",
+    "cv4": "partial",
+    "aq1": "yes",
+    "aq2": "yes",
+    "aq3": "partial",
+    "aq4": "yes",
+    "aq5": "partial",
+    "ts1": "yes",
+    "ts2": "partial",
+    "ts3": "yes",
+    "ts4": "yes",
+    "op1": "yes",
+    "op2": "partial",
+    "op3": "yes",
+    "op4": "yes",
+    "b1": "yes",
+    "b2": "partial",
+    "b3": "yes"
+  },
+  "notes": [
+    "Sample assessment for a synthetic retail returns assistant.",
+    "One or more questions are intentionally partial to show scoring behavior."
+  ]
+}
