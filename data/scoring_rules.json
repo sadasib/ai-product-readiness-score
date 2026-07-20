@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "answer_scores": {
+    "yes": 5,
+    "partial": 3,
+    "no": 0
+  },
+  "gate_max_score": 20,
+  "overall_max_score": 100,
+  "recommendation_rules": [
+    {
+      "label": "Ready for Production",
+      "min_score": 90,
+      "max_score": 100,
+      "requires_no_launch_blockers": true
+    },
+    {
+      "label": "Ready for Beta",
+      "min_score": 75,
+      "max_score": 89,
+      "requires_no_launch_blockers": true
+    },
+    {
+      "label": "Additional Review Required",
+      "min_score": 60,
+      "max_score": 74,
+      "requires_no_launch_blockers": false
+    },
+    {
+      "label": "Not Ready",
+      "min_score": 0,
+      "max_score": 59,
+      "requires_no_launch_blockers": false
+    }
+  ],
+  "launch_blockers": [
+    "aq1",
+    "aq4",
+    "aq5",
+    "ts1",
+    "ts3",
+    "ts4",
+    "op1",
+    "op4"
+  ],
+  "critical_failure_recommendation": "Additional Review Required"
+}
